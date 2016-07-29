@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <ImageView
+       android:layout_marginRight="16dp"
+       android:id="@+id/newsimage"
+       android:layout_width="80dp"
+       android:layout_height="65dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/image_demo"
+       />
+    <TextView
+        android:layout_toRightOf="@id/newsimage"
+        android:id="@+id/newstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:maxLines="2"
+        android:textColor="#111111"
+        android:ellipsize="end"
+        android:text="收到房间爱发牢骚的风景 阿达克附近ADSL定时飞接啊SD卡垃圾 "
+        />
+    <TextView
+        android:layout_toRightOf="@id/newsimage"
+        android:layout_below="@id/newstitle"
+        android:id="@+id/date"
+        android:textColor="@color/colorGray"
+        android:text="2016-07-12"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

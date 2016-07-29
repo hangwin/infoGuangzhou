@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ff0000"
+
+    >
+
+
+    <TextView
+        android:padding="6dp"
+        android:id="@+id/title"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/img_menu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+     />
+    <ImageView
+        android:id="@+id/back"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_control"
+        android:paddingRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+        <ImageView
+            android:paddingRight="8dp"
+            android:src="@drawable/icon_textsize"
+            android:id="@+id/changeSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/icon_share"
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

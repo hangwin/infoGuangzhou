@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:paddingTop="8dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="8dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/arrow"
+            android:src="@drawable/common_listview_headview_red_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       <ProgressBar
+           android:id="@+id/progress"
+           android:visibility="invisible"
+           android:layout_gravity="center"
+           android:indeterminateDrawable="@drawable/my_progress"
+           style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#ff00"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/state"
+            android:text="正在刷新"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ff00"
+            android:paddingTop="6dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/showTime"
+            android:text="2016-06-24 19:20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
