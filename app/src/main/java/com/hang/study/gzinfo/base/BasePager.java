@@ -15,6 +15,7 @@ import com.hang.study.gzinfo.R;
 public class BasePager {
     public Activity mActivity;
     public TextView title;
+    public ImageView grid;
     public ImageView img_menu;
     public FrameLayout frameContent;
     public View mrootView;
@@ -27,6 +28,7 @@ public class BasePager {
         title= (TextView) view.findViewById(R.id.title);
         img_menu= (ImageView) view.findViewById(R.id.img_menu);
         frameContent= (FrameLayout) view.findViewById(R.id.frameContent);
+        grid= (ImageView) view.findViewById(R.id.icon_list);
         return view;
     }
     public void initData() {

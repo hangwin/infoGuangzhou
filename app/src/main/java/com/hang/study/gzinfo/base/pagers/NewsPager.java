@@ -73,7 +73,10 @@ public class NewsPager extends BasePager {
         detailMenus=new ArrayList<>();
         detailMenus.add(new DetailNews(mActivity,newsMenu.data.get(0).children));
         detailMenus.add(new DetailTopic(mActivity));
-        detailMenus.add(new DetailPhotos(mActivity));
+        if(grid==null) {
+            System.out.println("grid---->null");
+        }
+        detailMenus.add(new DetailPhotos(mActivity,grid));
         detailMenus.add(new DetailInteract(mActivity));
         changeDetailPage(0);
         img_menu.setOnClickListener(new View.OnClickListener() {
